@@ -255,7 +255,7 @@ Reviewed ACL match counters to identify traffic matching the departmental deny r
 - Inter-VLAN routing
 - ICMP connectivity testing
 
-- ## 11. Author
+## 11. Author
 
 **Gabriel Uwaechie**
 
