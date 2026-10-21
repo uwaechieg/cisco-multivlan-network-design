@@ -195,7 +195,6 @@ Ports are configured as access ports and assigned to their respective VLANs.
 
 Access ports assigned to the correct VLANs: Passed
 Unused switch ports assigned to VLAN 99 and shut down: Passed
-The following commands will be used to verify the configuration:
 
 ## 8. Verification Commands
 ### Switch CLI Commands
