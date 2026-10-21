@@ -227,17 +227,20 @@ show ip interface vlan 60
 
 ## 9. Security Implementation
 1. VLAN Segmentation and Port Security Practices
+
 Separated six departments into individual VLANs to segment network traffic.
 Assigned access ports to their designated departmental VLANs.
 Assigned unused switch ports to VLAN 99 (parking VLAN).
 Administratively shut down unused switch ports to reduce unauthorized connection risks.
 2. Extended ACL and Guest Network Isolation
+
 Created an extended IPv4 ACL named GUEST-ISOLATION.
 Configured deny rules to restrict traffic from the Guest subnet (10.10.0.80/28) to the HR, Management, Finance, Commercial, and Technical/IT subnets.
 Added a permit rule for other IPv4 traffic originating from the Guest subnet.
 Tested Guest-to-department connectivity and observed failed pings to all five departmental networks.
 Verified that the ACL recorded matches against all five departmental deny rules.
 3. Security Testing
+
 Tested connectivity between devices within the same VLAN.
 Tested inter-VLAN connectivity to verify routing between departmental networks.
 Tested reachability to the Guest VLAN gateway (10.10.0.81).
